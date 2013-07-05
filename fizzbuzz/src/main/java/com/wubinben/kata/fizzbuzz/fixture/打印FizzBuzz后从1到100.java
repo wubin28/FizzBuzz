@@ -16,8 +16,8 @@ public class 打印FizzBuzz后从1到100 {
   private SoundMaker buzz;
 
   public 打印FizzBuzz后从1到100() {
-    this.buzz = Buzz.newInstance(null, "buzz");
-    this.fizz = Fizz.newInstance(buzz, "fizz");
+    this.buzz = Buzz.newInstance(null, "Buzz");
+    this.fizz = Fizz.newInstance(buzz, "Fizz");
   }
 
   public void set从1到100(int number) {
@@ -30,15 +30,6 @@ public class 打印FizzBuzz后从1到100 {
     if (sound.toString().equals("")) {
       sound.append(Integer.toString(this.number));
     }
-    if (number % 3 == 0 && number % 5 == 0) {
-      return "FizzBuzz";
-    }
-    if (number % 3 == 0) {
-      return "Fizz";
-    }
-    if (number % 5 == 0) {
-      return "Buzz";
-    }
-    return Integer.toString(number);
+    return sound.toString();
   }
 }
